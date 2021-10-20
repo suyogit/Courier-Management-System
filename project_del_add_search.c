@@ -20,11 +20,11 @@ struct user
     int id;
     char s_name[25];
     char s_address[25];
-    char s_phone[10];
+    char s_phone[13];
     char s_email[25];
     char r_name[25];
     char r_address[25];
-    char r_phone[10];
+    char r_phone[13];
     char r_email[25];
 };
 
@@ -383,9 +383,17 @@ void menu2()
     case 5:
         todelete();
         break;
-    default:
+//     default:
+//         menu1();
+//         break;
+		    
+     case 0:
         menu1();
         break;
+
+    default:
+        menu2();
+        break;		    
     }
 }
 
